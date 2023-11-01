@@ -1,0 +1,45 @@
+.HomeTab {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Tab { 
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 3rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .HomeTab_block {
+    display: flex;
+    position: relative;
+    width: 14rem;
+    height: 100%;
+  }
+  
+  .HomeTab_block a {
+    display: flex;
+    width: 7rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.125rem;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+  }
+  
+  .HomeTab_block .HomeTab_active {
+    color: var(--text1);
+    font-weight: 700;
+  }
+  
+  .HomeTab_block a svg {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
+  

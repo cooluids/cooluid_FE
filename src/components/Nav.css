@@ -1,0 +1,108 @@
+.Header_block {
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin: 0 auto;
+}
+
+.Header_innerBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.HeaderLogo_block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:200;
+    height:100;
+}
+
+.Header_left, .Header_right {
+    display: flex;
+    position: relative;
+}
+
+.left_details, .right_details {
+    position: absolute;
+    top: 0;
+    display: none;
+    background: #fff;
+}
+
+.left_details {
+    left:100%;
+}
+
+.right_details {
+    right:100%;
+}
+
+.left_nav-list, .right_nav-list {
+    list-style: none;
+    display: flex; /* 가로로 나열되도록 설정 */
+}
+
+.Header_left li,
+.Header_right li {
+    margin-bottom: 10px;
+    padding: 0; /* 항목 사이의 간격을 조절하세요 */
+    color: #000; /* 텍스트 색상 (검은색) */
+    font-weight: bold; /* 굵은 폰트 */
+    text-decoration: none; /* 밑줄 제거 */
+    font-size: 15px;
+    padding: 10px;
+}
+
+.Header_left:hover .left_details, .Header_right:hover .right_details {
+    display: block;
+}
+
+span,
+.left_nav-list a {
+    color: #000; /* 텍스트 색상 (검은색) */
+    font-weight: bold; /* 굵은 폰트 */
+    text-decoration: none; /* 밑줄 제거 */
+    font-size: 25px;
+    padding: 50px;
+}
+
+.right_nav-list a {
+    color: #000; /* 텍스트 색상 (검은색) */
+    font-weight: bold; /* 굵은 폰트 */
+    text-decoration: none; /* 밑줄 제거 */
+    font-size: 25px;
+    padding: 55px;
+}
+
+a.button {
+    display: block;
+    position: relative;
+    width: 120px;
+    padding: 0;
+    margin: 10px 20px 10px 0;
+    font-weight: 600;
+    text-align: center;
+    line-height: 50px;
+    color: #FFF;
+    border-radius: 9px;
+    transition: all 0.2s ;
+}
+
+.btnBlack {
+background: #000000;
+}
+
+.btnBlack.btnPush {
+box-shadow: 0px 5px 0px 0px #4e4e4e96;
+}
+
+.btnPush:hover {
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+
+  .btnBlack.btnPush:hover {
+    box-shadow: 0px 0px 0px 0px #000000;
+  }

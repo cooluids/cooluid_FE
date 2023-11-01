@@ -1,0 +1,77 @@
+/* Post.css */
+.post {
+    margin: 20px 0; /* 20px 위/아래 여백을 유지하고 왼쪽/오른쪽 여백을 제거 */
+    position: relative;
+    width: 300px;
+    height: 440px;
+    transition: transform 0.3s;
+    display: flex; /* Flex 컨테이너로 설정 */
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+    justify-self: center; /* 그리드 아이템을 가로로 가운데 정렬 */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 10px; /* 테두리를 둥글게 만듭니다 */
+    border: 2px solid rgba(0, 0, 0, 0.2); /* 두껍고 뚜렷한 테두리 스타일 추가 */
+  }
+  
+  .post:hover {
+    transform: scale(1.03);
+  }
+  
+  .thumbnail-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: black;
+    transition: transform 0.3s, filter 0.2s;
+  }
+  
+  .post-info {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; /* top을 0으로 설정해주지 않으면 포스터 밑으로 설명이 깔림 */
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .post:hover .thumbnail {
+    filter: brightness(0.9);
+  }
+  
+  .post:hover .post-info {
+    opacity: 1;
+  }
+  
+  .additional-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 한 줄에 4개의 열 생성 */
+    gap: 30px; /* 그리드 아이템 간의 간격 설정 */
+  }
+
+.BasicLay_main {
+    margin: 20px;
+}
+
+main {
+    padding: 20px 100px; /* 왼쪽과 오른쪽에 동일한 공백을 설정 */
+}
